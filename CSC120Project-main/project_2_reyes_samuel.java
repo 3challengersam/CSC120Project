@@ -1,13 +1,16 @@
 import java.util.Scanner;
 
-public class project_reyes_samuel
+public class project 2
 {
    public static void main(String[] args)
    {
+      //variables
       int gpu = 0;
       int cpu = 0;
       int core = 0;
       int choice = 0;
+      double com = 0;
+      int base;
      
       double performance = 0.0;
       double multiplier = 0.0;
@@ -24,10 +27,19 @@ public class project_reyes_samuel
       final double medium = 3;
       final double low = 4;
       final double unable = 5;
-      
+          
       
      Scanner keyboard = new Scanner(System.in);
+     // determing amount of computers for the loop
+     System.out.print("how many computers ");
+         com = keyboard.nextInt();
      
+     System.out.printf("you have " + com + " computers"+ "\n" );
+     
+     System.out.print("Computer Hardware Graphics Quality Recommendation Tool");
+     //computer loop information
+     for (base = 1; base <= com; base++)
+     {
      System.out.print("What is the clock speed of your graphics card? ");
          gpu = keyboard.nextInt();
       
@@ -45,7 +57,8 @@ public class project_reyes_samuel
       
       System.out.print("\nEnter your choice: ");
          choice = keyboard.nextInt();
-         
+      
+        //determining performance 
       if(choice == one)
       {
          multiplier = one;       
@@ -67,7 +80,7 @@ public class project_reyes_samuel
           
       
   
-        
+        //determining graphics
          if(performance >= 17000)
       {
          graphics = 1;       
@@ -89,6 +102,13 @@ public class project_reyes_samuel
          graphics = 5;       
       }
       
+      // listing the information        
+      System.out.printf("gpu clock speed: " + gpu + "\n" );
+      System.out.printf("cpu clock speed: " + cpu + "\n");
+      System.out.printf("cores: " + core + "\n");
+      System.out.printf("resolution: " + choice + "\n");
+      System.out.printf("performance: " + performance*.1  + "\n");
+      
       switch (graphics)
       {
          case 1:
@@ -107,12 +127,6 @@ public class project_reyes_samuel
             System.out.println("unalbe to play");
             break; 
         }
-              
-      System.out.printf("Your performance is " + gpu + "\n" );
-      System.out.printf("Your performance is " + cpu + "\n");
-      System.out.printf("Your performance is " + core + "\n");
-      System.out.printf("Your performance is " + choice + "\n");
-      System.out.printf("Your performance is " + performance*.1  + "\n");
-      System.out.printf("Your performance is " + graphics + "\n");
+    }
     }
 }
