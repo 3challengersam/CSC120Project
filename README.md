@@ -1,2 +1,2 @@
 # CSC120Project
-Repository for hosting the CSC120 Programming Project
+Updated code to allow user to enter information for multiple computers
