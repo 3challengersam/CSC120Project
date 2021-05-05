@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class project 2
+public class project_3
 {
    public static void main(String[] args)
    {
@@ -27,7 +27,9 @@ public class project 2
       final double medium = 3;
       final double low = 4;
       final double unable = 5;
-          
+      double Total = 0;
+      double total = 100000;
+           
       
      Scanner keyboard = new Scanner(System.in);
      // determing amount of computers for the loop
@@ -81,19 +83,19 @@ public class project 2
       
   
         //determining graphics
-         if(performance >= 17000)
+         if(performance >= 1700)
       {
          graphics = 1;       
       }
-       else if(performance >= 15000)
+       else if(performance >= 1500)
       {
          graphics = 2;       
       }
-       else if(performance >= 13000)
+       else if(performance >= 1300)
       {
          graphics = 3;       
       }
-       else if(performance >= 11000)
+       else if(performance >= 1100)
       {
          graphics = 4;       
       }
@@ -102,31 +104,3 @@ public class project 2
          graphics = 5;       
       }
       
-      // listing the information        
-      System.out.printf("gpu clock speed: " + gpu + "\n" );
-      System.out.printf("cpu clock speed: " + cpu + "\n");
-      System.out.printf("cores: " + core + "\n");
-      System.out.printf("resolution: " + choice + "\n");
-      System.out.printf("performance: " + performance*.1  + "\n");
-      
-      switch (graphics)
-      {
-         case 1:
-            System.out.println("ultra");
-            break;  
-         case 2:
-            System.out.println("high");
-            break;  
-         case 3:
-            System.out.println("medium");
-            break; 
-         case 4:
-            System.out.println("low");
-            break;  
-        case 5:
-            System.out.println("unalbe to play");
-            break; 
-        }
-    }
-    }
-}
